@@ -1,0 +1,1 @@
+Controller invariants passed: lease, reserve, stale, invalid, future time, clock reversal, energy, obstacle, deadline, terminal states, capacity.
