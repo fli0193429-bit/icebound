@@ -1,0 +1,10 @@
+./build/test_control
+Controller invariants passed: lease, reserve, stale, invalid, future time, clock reversal, energy, obstacle, deadline, terminal states, capacity.
+python3 tests/test_scenarios.py
+PASS nominal      docked at 117.800s / 8.073333 Wh remaining
+PASS link-loss    docked at 28.100s / 11.063333 Wh remaining
+PASS nav-stale    docked at 20.100s / 11.435556 Wh remaining
+PASS low-energy   docked at 35.100s / 1.430000 Wh remaining
+PASS obstacle     docked at 19.900s / 11.447778 Wh remaining
+PASS deadline     docked at 16.000s / 11.469444 Wh remaining
+PASS current      docked at 122.400s / 7.920000 Wh remaining
