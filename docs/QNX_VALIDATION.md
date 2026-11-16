@@ -41,8 +41,10 @@ Do not submit this project as QNX-verified until this checklist is complete.
 
 The authorized non-commercial SDP 8.0 license has been accepted and deployed.
 QNX Software Center 2.0.4 is installed on the development host. Its connection
-test passed using the host system Java trust store. Package listing currently
-fails with `Cannot read the array length because "allrepos" is null`.
+test passed using the host system Java trust store. Package listing fails with
+`Cannot read the array length because "allrepos" is null`. A subsequent metadata
+synchronization reports `Request requires authorization`. QNX Software Center
+requires its own authenticated session before SDP packages can be installed.
 The SDP toolchain, target compilation and QEMU execution remain pending.
 
 After deployment, run `sh tools/collect_qnx.sh ./icebound-qnx qnx-evidence`
