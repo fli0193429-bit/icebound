@@ -1,0 +1,240 @@
+{
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "clock": "simulated",
+  "step_s": 0.1,
+  "qnx_build_verified": false,
+  "qnx_runtime_verified": false,
+  "results": [
+    {
+      "scenario": "nominal",
+      "result": "DOCKED",
+      "time_s": 117.8,
+      "remaining_wh": 8.073333,
+      "steps": 1179,
+      "transitions": [
+        {
+          "state": [
+            "SURVEY",
+            "normal"
+          ],
+          "time": 0.0
+        },
+        {
+          "state": [
+            "RETURN",
+            "route_complete"
+          ],
+          "time": 59.7
+        },
+        {
+          "state": [
+            "DOCKED",
+            "route_complete"
+          ],
+          "time": 117.8
+        }
+      ]
+    },
+    {
+      "scenario": "link-loss",
+      "result": "DOCKED",
+      "time_s": 28.1,
+      "remaining_wh": 11.063333,
+      "steps": 282,
+      "transitions": [
+        {
+          "state": [
+            "SURVEY",
+            "normal"
+          ],
+          "time": 0.0
+        },
+        {
+          "state": [
+            "RETURN",
+            "command_lease_expired"
+          ],
+          "time": 14.1
+        },
+        {
+          "state": [
+            "DOCKED",
+            "command_lease_expired"
+          ],
+          "time": 28.1
+        }
+      ]
+    },
+    {
+      "scenario": "nav-stale",
+      "result": "DOCKED",
+      "time_s": 20.1,
+      "remaining_wh": 11.435556,
+      "steps": 202,
+      "transitions": [
+        {
+          "state": [
+            "SURVEY",
+            "normal"
+          ],
+          "time": 0.0
+        },
+        {
+          "state": [
+            "HOLD",
+            "navigation_stale"
+          ],
+          "time": 8.2
+        },
+        {
+          "state": [
+            "RETURN",
+            "navigation_stale"
+          ],
+          "time": 12.0
+        },
+        {
+          "state": [
+            "DOCKED",
+            "navigation_stale"
+          ],
+          "time": 20.1
+        }
+      ]
+    },
+    {
+      "scenario": "low-energy",
+      "result": "DOCKED",
+      "time_s": 35.1,
+      "remaining_wh": 1.43,
+      "steps": 352,
+      "transitions": [
+        {
+          "state": [
+            "SURVEY",
+            "normal"
+          ],
+          "time": 0.0
+        },
+        {
+          "state": [
+            "RETURN",
+            "energy_reserve"
+          ],
+          "time": 17.6
+        },
+        {
+          "state": [
+            "DOCKED",
+            "energy_reserve"
+          ],
+          "time": 35.1
+        }
+      ]
+    },
+    {
+      "scenario": "obstacle",
+      "result": "DOCKED",
+      "time_s": 19.9,
+      "remaining_wh": 11.447778,
+      "steps": 200,
+      "transitions": [
+        {
+          "state": [
+            "SURVEY",
+            "normal"
+          ],
+          "time": 0.0
+        },
+        {
+          "state": [
+            "HOLD",
+            "obstacle"
+          ],
+          "time": 8.0
+        },
+        {
+          "state": [
+            "RETURN",
+            "obstacle"
+          ],
+          "time": 12.0
+        },
+        {
+          "state": [
+            "DOCKED",
+            "obstacle"
+          ],
+          "time": 19.9
+        }
+      ]
+    },
+    {
+      "scenario": "deadline",
+      "result": "DOCKED",
+      "time_s": 16.0,
+      "remaining_wh": 11.469444,
+      "steps": 161,
+      "transitions": [
+        {
+          "state": [
+            "SURVEY",
+            "normal"
+          ],
+          "time": 0.0
+        },
+        {
+          "state": [
+            "HOLD",
+            "deadline_missed"
+          ],
+          "time": 8.0
+        },
+        {
+          "state": [
+            "RETURN",
+            "deadline_missed"
+          ],
+          "time": 8.1
+        },
+        {
+          "state": [
+            "DOCKED",
+            "deadline_missed"
+          ],
+          "time": 16.0
+        }
+      ]
+    },
+    {
+      "scenario": "current",
+      "result": "DOCKED",
+      "time_s": 122.4,
+      "remaining_wh": 7.92,
+      "steps": 1225,
+      "transitions": [
+        {
+          "state": [
+            "SURVEY",
+            "normal"
+          ],
+          "time": 0.0
+        },
+        {
+          "state": [
+            "RETURN",
+            "route_complete"
+          ],
+          "time": 53.8
+        },
+        {
+          "state": [
+            "DOCKED",
+            "route_complete"
+          ],
+          "time": 122.4
+        }
+      ]
+    }
+  ]
+}
